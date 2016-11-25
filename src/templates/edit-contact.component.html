@@ -1,0 +1,44 @@
+<form class="form-horizontal" name='editContact' novalidate>
+    <div class="form-group">
+      <label for="name" class="col-sm-2 control-label">Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" name='name' placeholder="{{$ctrl.nameToEdit}}" 
+        ng-model='$ctrl.name'
+        required
+        minlength='3'>
+        <span class='inv'
+        ng-if="(editContact.name.$error.minlength || editContact.name.$error.required)
+        && editContact.name.$touched">
+      <p>Name must be at least 3 characters long</p></span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="phone_number" class="col-sm-2 control-label">Phone Number</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="phone_number" name='phone_number' placeholder='{{$ctrl.phoneToEdit}}' 
+        ng-model='$ctrl.phone_number'
+        required
+        minlength='9'>
+        <span class='inv'
+        ng-if="(editContact.phone_number.$error.minlength || editContact.phone_number.$error.required)
+        && editContact.phone_number.$touched">
+      <p>Phone Number must be at least 9 characters long</p></span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="address" class="col-sm-2 control-label">Address</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="address" name='address' placeholder='{{$ctrl.addressToEdit}}' 
+        ng-model='$ctrl.address'
+        required>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-primary"
+        ng-disabled='editContact.$invalid' 
+        ng-click='$ctrl.editContact();'
+        ui-sref='contacts'>Add Contact</button>
+      </div>
+    </div>
+  </form>

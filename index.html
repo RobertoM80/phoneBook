@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='PhoneBook' ng-strict-di>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular phoneBook</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body> 
+    <header>
+
+      <navigation></navigation>
+
+    </header>
+    
+    <section>
+
+      <ui-view></ui-view> 
+
+    </section>
+    
+    <footer class="navbar navbar-fixed-bottom">
+      <div class="container text-center">
+        <p>Roberto Mirabella's phoneBook App</p>
+      </div>
+    </footer>
+
+    <!-- Libs -->
+  <script src="lib/jquery-2.1.4.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script> 
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+  <script src="lib/angular-animate.min.js"></script>
+
+  <!-- Modules -->
+  <script src="src/js/modules/phonebook.module.js"></script>
+  <script src="src/js/modules/data.module.js"></script>
+
+  <!-- Routes -->
+  <script src="src/js/routes/routes.js"></script>
+
+  <!-- Controllers -->
+  <script src="src/js/controllers/contacts.controller.js"></script>
+  <script src="src/js/controllers/newcontact.controller.js"></script>
+  <script src="src/js/controllers/editcontact.controller.js"></script>
+
+  <!-- components -->
+  <script src="src/js/components/newcontact.component.js"></script>
+  <script src="src/js/components/editcontact.component.js"></script>
+  <script src="src/js/components/contacts.component.js"></script>
+  <script src="src/js/components/navigation.component.js"></script>
+
+
+  <!-- Services -->
+  <script src="src/js/services/contacts.service.js"></script> 
+  </body>
+</html>

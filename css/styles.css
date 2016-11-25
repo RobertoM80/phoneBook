@@ -1,0 +1,75 @@
+body {
+  font-family: 'Indie Flower', cursive !important;
+  padding-bottom: 70px;
+  /* The starting CSS styles for the enter animation */
+  /* The finishing CSS styles for the enter animation */
+  /* now the element will fade out before it is removed from the DOM */ }
+  body .wecome-box {
+    margin-top: 150px; }
+    body .wecome-box button {
+      margin-top: 20px; }
+  body navigarion nav {
+    font-family: 'Indie Flower', cursive; }
+  body .darken {
+    color: #edeeef;
+    background-color: #edeeef; }
+    body .darken button {
+      color: #edeeef;
+      background-color: #edeeef;
+      border-color: #edeeef; }
+  body h1 {
+    color: lightblue;
+    font-family: 'Indie Flower', cursive; }
+  body .navbar-fixed-bottom {
+    background-color: lightgrey; }
+    body .navbar-fixed-bottom p {
+      color: grey;
+      margin-top: 15px;
+      font-family: 'Indie Flower', cursive; }
+  body section {
+    padding: 0 20px; }
+    body section table {
+      border: 1px solid lightgrey;
+      border-radius: 20px; }
+  body ui-view .form-group.search {
+    margin-right: 50px;
+    color: lightblue; }
+  body ui-view .form {
+    position: relative;
+    margin-top: -46%;
+    width: 600px;
+    background-color: oliveDrab;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    z-index: 10; }
+    body ui-view .form h3 {
+      margin-bottom: 40px; }
+    body ui-view .form h6 {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      font-size: 13px;
+      cursor: pointer; }
+  body ui-view .edit {
+    background-color: Peru; }
+  body .ng-touched.ng-valid {
+    border: 3px solid limeGreen; }
+  body .ng-touched.ng-invalid {
+    border: 3px solid maroon; }
+  body span.inv {
+    color: maroon; }
+  body ui-view.ng-enter {
+    transition: 0.5s linear all;
+    opacity: 0; }
+  body ui-view.ng-enter.ng-enter-active {
+    opacity: 1; }
+  body ui-view tr.ng-leave {
+    transition: 0.1s linear all;
+    opacity: 1;
+    transform: translateX(0); }
+  body ui-view tr.ng-leave.ng-leave-active {
+    opacity: 0;
+    transform: translateX(100%); }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,45 @@
+
+  <form class="form-horizontal" name='newContact' novalidate>
+    <div class="form-group">
+      <label for="name" class="col-sm-2 control-label">Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" name='name' placeholder="Name" 
+        ng-model='$ctrl.name'
+        required
+        minlength='3'>
+        <span class='inv'
+        ng-if="(newContact.name.$error.minlength || newContact.name.$error.required)
+        && newContact.name.$touched">
+      <p>Name must be at least 3 characters long</p></span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="phone_number" class="col-sm-2 control-label">Phone Number</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="phone_number" name='phone_number' placeholder='phone number' 
+        ng-model='$ctrl.phone_number'
+        required
+        minlength='9'>
+        <span class='inv'
+        ng-if="(newContact.phone_number.$error.minlength || newContact.phone_number.$error.required)
+        && newContact.phone_number.$touched">
+      <p>Phone Number must be at least 9 characters long</p></span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="address" class="col-sm-2 control-label">Address</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="address" name='address' placeholder='Address' 
+        ng-model='$ctrl.address'
+        required>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-primary"
+        ng-disabled='newContact.$invalid' 
+        ng-click='$ctrl.addContact();'
+        ui-sref='contacts'>Add Contact</button>
+      </div>
+    </div>
+  </form>
