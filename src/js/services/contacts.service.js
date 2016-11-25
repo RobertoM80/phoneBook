@@ -12,8 +12,8 @@
 
 		service.getContacts = function () {
 			var response = $http({
-				method: 'GET',
-				url: (ApiPath)
+				method: 'jsonp',
+				url: (ApiPath + '?callback=JSON_CALLBACK')
 			})
 			.then(function (response) {
 				service.contacts = response.data.contacts;
