@@ -12,7 +12,7 @@
 		var $ctrl = this;
 
 		$ctrl.darkPage = function () {
-			$rootScope.$broadcast('darken', {on: true});
+			$rootScope.$broadcast('darken', {on: false});
 		}
 	}
 })();
