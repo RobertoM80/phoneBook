@@ -11,7 +11,10 @@
 		service.darken = '';
 
 		service.getContacts = function () {
-			var response = $http.get(ApiPath)
+			var response = $http({
+				method: 'GET',
+				url: (ApiPath)
+			})
 			.then(function (response) {
 				service.contacts = response.data.contacts;
 				console.log(service.contacts);
