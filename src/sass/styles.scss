@@ -51,8 +51,9 @@ body {
 		}
 
 		.form {
-			position: relative;
-			margin-top: -46%;
+			position: fixed;
+			top: 150px;
+			margin-left: 25%;
 			width: 600px;
 			background-color: oliveDrab;
 			padding: 20px;
