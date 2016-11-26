@@ -11,8 +11,8 @@
 	function NavigationComponentController ($rootScope) {
 		var $ctrl = this;
 
-		$ctrl.darkPage = function () {
-			$rootScope.$broadcast('darken', {on: false});
+		$ctrl.darkPage = function (bool) {
+			$rootScope.$broadcast('darken', {on: bool});
 		}
 	}
 })();
