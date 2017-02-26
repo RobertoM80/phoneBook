@@ -46,8 +46,8 @@
 					templateUrl: 'src/templates/edit-contact.html',
 					controller: 'EditContactController as $ctrl',
 				})
-		}
 
-		// use the HTML5 History API
-		$locationProvider.html5Mode(true);
+				// use the HTML5 History API
+				$locationProvider.html5Mode(true);
+		}
 })();
